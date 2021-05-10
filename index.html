@@ -1,0 +1,214 @@
+<html>
+<center>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="static/FileUploader.js"></script>
+    <script src="static/js.js"></script>
+
+</head>
+<body>
+    <img src="static/img/logo.png" style="width: 250px"></img> 
+    <div class="container p-5">
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Music')" id="defaultOpen">Music File Upload</button>
+        <button class="tablinks" onclick="openCity(event, 'Youtube')">Youtube Ranking</button>
+      </div>
+      
+      <!-- Tab content -->
+      <div id="Music" class="tabcontent">
+        <h3>Music File Upload</h3>
+        <p>Upload Music from IoTtalk</p>
+        <div class="row" style="margin: 20px;">
+          <div class="col-20 col-md-30 mx-auto" style="margin: 0">
+            <div class="custom-file" style="width: 280px;">
+              <form action="" method=post enctype=multipart/form-data>
+                <input type="file" name="file" class="custom-file-input" data-target="file-uploader" id="file-uploader" style="margin: 0;width: 180px; float: left;">
+                <input type=submit value=Upload style="color: white; background: linear-gradient(45deg, #0087ff, #24e0e8); border-radius: 5px; border-color: #00000000;">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="progress" style="width: 700px;height: 22px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0"
+                aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span class="progress-bar-label">0%</span>
+            </div>
+        </div>
+      </div>
+
+      <div id="Youtube" class="tabcontent">
+        <h3>Youtube Music Ranking</h3>
+        <a href="https://www.youtube.com/watch?v=ymvUlfZCrbw" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.1</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/ymvUlfZCrbw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCFc61t0urbhT9vi-XmStuy27tCNQ"></img>
+            </div>
+            <div class="content">
+              <p>瘦子E.SO【WAIT】Official Music Video</p>
+              <p>觀看次數：770,834次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.2</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/ioNng23DkIM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC5SoHXbLw3BfuL9e_dw0xAEgZKJw"></img>
+            </div>
+            <div class="content">
+              <p>BLACKPINK - 'How You Like That' M/V</p>
+              <p>觀看次數：288,998,001次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=6XSoVmT0qXo" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.3</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/6XSoVmT0qXo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCl75mI2uCqOzgDP01c--XC2CfJzQ"></img>
+            </div>
+            <div class="content">
+              <p>G.E.M.鄧紫棋【別勉強 Don’t Force It (feat. Eric周興哲)】Official Music Video</p>
+              <p>觀看次數：3,957,557次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Ujb-gvqsoi0" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.4</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/Ujb-gvqsoi0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAhjnoZC68cOMqu05afOF58MRpXMg"></img>
+            </div>
+            <div class="content">
+              <p>Red Velvet - IRENE & SEULGI 'Monster' MV</p>
+              <p>觀看次數：26,923,802次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=6t-MjBazs3o" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.5</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/6t-MjBazs3o/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDjomm6sfzy3hYXrM329Cj754NMsg"></img>
+            </div>
+            <div class="content">
+              <p>SƠN TÙNG M-TP | CÓ CHẮC YÊU LÀ ĐÂY | OFFICIAL MUSIC VIDEO</p>
+              <p>觀看次數：55,763,302次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=XQSse3b2ge4" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.6</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/XQSse3b2ge4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDB3ao96XA3XkzN9d_1MdiBq7McMQ"></img>
+            </div>
+            <div class="content">
+              <p>GFRIEND (여자친구) 'Apple' Official M/V</p>
+              <p>觀看次數：10,892,042次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=LOZosKmE1Rk" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.7</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/LOZosKmE1Rk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLALzk4PmP4MNuNeNhiqfZgMrykxJA"></img>
+            </div>
+            <div class="content">
+              <p>【MV首播】談詩玲 vs 楊哲 - 無心石(官方完整版MV) HD 【三立八點檔『炮仔聲』片尾曲】</p>
+              <p>觀看次數：292,357次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=deoS5ISDCUU" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.8</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/deoS5ISDCUU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSKEy5S7VeyemeqT9mloGsi3Q3UQ"></img>
+            </div>
+            <div class="content">
+              <p>'W0LF(S) 五堅情' 邱鋒澤 FENG ZE，陳零九 NINE CHEN，黃偉晉WAYNE，賴晏駒 LAI，婁峻碩SHOU【ALL DAY】MV</p>
+              <p>觀看次數：231,776次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Y8bvPiFnfDw" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.9</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/Y8bvPiFnfDw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDs8cclwYQBfuxtXCEPH1ZOjuv4OQ"></img>
+            </div>
+            <div class="content">
+              <p>韋禮安 WeiBird《記得回來 I'll Be Here》Official Music Video</p>
+              <p>觀看次數：1,149,293次</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=XFTu8vyC-PY" target="_blank">
+          <div id="no.1" class="tablist">
+            <div class="rank">
+              <h4>NO.10</h4>
+            </div>
+            <div class="image">
+              <img src="https://i.ytimg.com/vi/XFTu8vyC-PY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA4Iu7UwSlzs2lXIHVfDS_CbZWJoA"></img>
+            </div>
+            <div class="content">
+              <p>AURELIE HERMANSYAH - KEPASTIAN (Official Music Video)</p>
+              <p>觀看次數：16,063,773次</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <h3>Welcome to MusicIoT</h3>
+        <p>There are two functions that we supply</p>
+        <p>1. Upload music files by iot service.</p>
+        <p>2. Know what songs are popular in YouTube now!</p>
+      </div>        
+    </div>
+    <script>
+        $(document).ready(function () {
+            event.preventDefault();
+            var source = new EventSource("/progress");
+            source.onmessage = function (event) {
+                $('.progress-bar').css('width', event.data + '%').attr('aria-valuenow', event.data);
+                $('.progress-bar-label').text(event.data + '%');
+                if (event.data == 100) {
+                    source.close()
+                }
+            }
+
+        });
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</center>
+</html>
